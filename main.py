@@ -19,7 +19,7 @@ class Window(QMainWindow, Ui_MainWindow):
 
     def draw_ellipce(self, qp):
         lenna = random.choice(range(201))
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(random.choice(range(256)), random.choice(range(256)), random.choice(range(256))))
         qp.drawEllipse(random.choice(range(600)), random.choice(range(400)), lenna, lenna)
 
 
